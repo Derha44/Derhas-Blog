@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derhas' Blog</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">My Blog</div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Mountain Looks Good from Far Away, But It's Hell When We Reach and Stay There:</h1>
+      <p> 
+        Mountain Looks Good from Far Away, But It's Hell When We Reach and Stay There:
+      </p>
+      <a href="#blog" class="cta-btn">Start Reading</a>
+    </div>
+  </section>
+ 
+  <p>
+    <pre>
+         <b>
+                          <h3>About Me</h3>
+          <i>
+         My name is Derharas Swargiary, and I am a Bachelor of Commerce (B.Com) graduate from Rajiv Gandhi University, Arunachal Pradesh. Born on 
+         March 6, 1998, in a small village called Dopdopi, Rangapara, Assam, I have experienced the hardships of life firsthand. Growing up in poverty, 
+         I had just enough to survive, but those struggles shaped me into the person I am today. Despite the challenges, I have always believed in the 
+         power of perseverance and education. My journey has been one of resilience, and I strive to use my experiences to inspire and bring change to 
+         those facing similar hardships. Through my work and aspirations, I hope to contribute to society, uplift those in need, and prove that no matter 
+         where we come from, determination and hard work can pave the way to a better future.
+         </i>
+        </b>
+        </pre>
+  </p>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+    </section>
+    
+    <!-- Main Content -->
+    <main class="container">
+      <section id="blog" class="blog-posts">
+        <article class="post">
+          <img src="https://via.placeholder.com/400x250" alt="blog-post 1">
+          <div class="post-content">
+            <h2>Mountain Looks Good from Far Away, But It's Hell When We Reach and Stay There:</h2>
+          <p>The Reality of Education in Rural Areas Nestled amidst serene landscapes and picturesque views, rural areas often embody a charm that seems idyllic from a distance. The mountains stand majestically, their allure capturing hearts and imaginations. Yet, for those who call these places home, especially when it comes to education, the reality can be starkly different.
+            
+            Access to quality education remains a formidable challenge in many rural communities. While the landscape paints a tranquil picture, the infrastructure for learning often falls short. Schools, if present, struggle with basic amenities and resources. The nearest educational facilities may be hours away, necessitating arduous journeys for students eager to learn.
+            
+            For the children growing up here, aspirations are often hindered by the lack of opportunities. The dream of a better future through education can seem distant, much like the horizon beyond the rolling hills. Teachers, passionate yet under-resourced, strive to impart knowledge against formidable odds. Limited funding and outdated curricula further compound the struggle, leaving young minds grappling with a reality where potential remains largely untapped.
+            
+            Moreover, societal norms and economic pressures can perpetuate cycles of limited education, with families prioritizing immediate needs over long-term investments in schooling. This perpetuates a cycle where progress stagnates, and the promise of a brighter future remains elusive.
+            
+            Yet, amidst these challenges, resilience shines through. Communities band together, advocating for change and seeking innovative solutions. Grassroots initiatives emerge, aiming to bridge gaps and empower the next generation. Technology, when accessible, becomes a beacon of hope, connecting learners to a world of knowledge beyond their immediate surroundings.
+            
+            In conclusion, while the mountain may appear enchanting from afar, the reality on the ground demands attention and action. Education is not just a pathway to personal growth but a cornerstone of societal development. Addressing the disparities in rural education requires collective effort, investment, and a commitment to nurturing every child's potential, regardless of geography.
+            
+            As we gaze upon the distant peaks, let us remember the challenges faced by those who dwell among them. Together, we can strive to make the journey to education less daunting and ensure that the view from the summit is one of shared accomplishment and opportunity.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+        <article class="post">
+          <img src="https://via.placeholder.com/400x250" alt="Blog Post 2">
+          <div class="post-content">
+            <h2>Blog Post Title 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor.</p>
+            <a href="#" class="read-more">Read More →</a>
+          </div>
+        </article>
+      </section>
+    </main>
+    
+  </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or inquiries.</p>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 My Professional Blog. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll(".nav-link");
+      navLinks.forEach(link => {
+        link.addEventListener("click", function(event) {
+          event.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            window.scrollTo({
+              top: targetSection.offsetTop - 60,
+              behavior: "smooth"
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
